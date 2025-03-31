@@ -1,0 +1,84 @@
+
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    gap: 50px;
+}
+
+.registro-card {
+    background-color: #f8f1e4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.registro-card h2 {
+    margin-bottom: 20px;
+    color: #8b5a2b;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.btn-registrar {
+    background-color: rgba(77, 59, 36, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-registrar:hover {
+    background-color: rgba(139, 90, 43, 0.9);
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #8b5a2b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.registro-image {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
