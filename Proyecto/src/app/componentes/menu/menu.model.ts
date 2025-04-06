@@ -1,7 +1,6 @@
 export interface Plato {
     nombre: string;
     descripcion: string;
-    precio: number;
     alergenos: string[];
     imagen: string;
   }
