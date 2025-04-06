@@ -1,3 +1,4 @@
+/* Estilo general para cada sección */
 .section {
     margin-bottom: 40px;
 }
@@ -8,6 +9,7 @@
     padding-bottom: 5px;
     text-align: center; /* Centrar el texto */
 }
+
 .section h5 {
     color: #4d4b48;
     padding-bottom: 5px;
@@ -15,15 +17,16 @@
     border-bottom: 2px solid #8b5a2b;
 }
 
-
-
+/* Estilo para el contenedor del menú */
 .menu {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
+    margin: 0 auto; /* Centra el contenido */
 }
 
+/* Estilo para los platos */
 .platos {
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
@@ -33,6 +36,7 @@
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .platos img {
@@ -41,6 +45,22 @@
     margin-bottom: 10px;
 }
 
+/* Efecto hover en los platos */
+.platos:hover {
+    transform: translateY(-5px); /* Sube ligeramente el plato cuando se pasa el mouse */
+}
+
+/* Estilo para el texto de los platos */
+.platos p {
+    color: #4d3b24;
+}
+
+.platos strong {
+    font-size: 1.1rem;
+    color: #8b5a2b;
+}
+
+/* Estilo para las secciones de cócteles */
 .cocktails {
     display: flex;
     flex-wrap: wrap;
@@ -58,12 +78,18 @@
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .cocktail img {
     width: 60%;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+/* Efecto hover en los cócteles */
+.cocktail:hover {
+    transform: translateY(-5px); /* Sube ligeramente el cóctel cuando se pasa el mouse */
 }
 
 .cocktail p {
