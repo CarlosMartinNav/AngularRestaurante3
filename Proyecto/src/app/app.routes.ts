@@ -8,6 +8,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component'
 import { QuienesSomosComponent } from './componentes/quienes-somos/quienes-somos.component'
 import { LoginComponent } from './componentes/login/login.component'
 import { RegistrarComponent } from './componentes/registrar/registrar.component'
+import { PageNotFoundComponent } from './componentes/page-not-found/page-not-found.component'
 
 
 export const routes: Routes = [
@@ -20,5 +21,6 @@ export const routes: Routes = [
     {path : 'quienessomos', component: QuienesSomosComponent},
     {path : 'login', component: LoginComponent},
     {path : 'registrar', component: RegistrarComponent},
-    {path: '', redirectTo: '/home', pathMatch: 'full'}
+    {path: '', redirectTo: '/home', pathMatch: 'full'},
+    {path: '**', component: PageNotFoundComponent} // Ruta para manejar rutas no encontradas
 ];

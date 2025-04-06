@@ -1,0 +1,7 @@
+.Error404 {
+    font-size: 30px;    
+    color: black;
+    padding-bottom: 10px;
+    text-align: center; 
+    border-bottom: 2px solid #8b5a2b; /*línea inferior*/
+}
