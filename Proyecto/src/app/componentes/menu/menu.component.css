@@ -21,14 +21,15 @@
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px; /* Reducción del gap entre las tarjetas */
     justify-content: space-between;
     margin: 0 auto; /* Centra el contenido */
+    padding: 0 10px; /* Espacio sutil a los lados del contenedor */
 }
 
 /* Estilo para los platos */
 .platos {
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 10px); /* Reducción del espacio entre las tarjetas */
     box-sizing: border-box;
     text-align: center;
     background-color: #f8f1e4;
@@ -64,13 +65,14 @@
 .cocktails {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px; /* Reducción del gap entre las tarjetas */
     justify-content: space-between;
     margin-top: 20px;
+    padding: 0 10px; /* Espacio sutil a los lados del contenedor */
 }
 
 .cocktail {
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 10px); /* Reducción del espacio entre las tarjetas */
     box-sizing: border-box;
     text-align: center;
     background-color: #f8f1e4;
