@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { PlatoService, Plato } from '../../servicios/plato.service';
-import { HttpClientModule } from '@angular/common/http';
+import { PlatoService } from '../../servicios/plato.service';
+import { Plato } from '../menu/menu.model';
 
 @Component({
   selector: 'app-plato-detalle',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule],
   templateUrl: './plato-detalle.component.html',
   styleUrls: ['./plato-detalle.component.css']
 })
