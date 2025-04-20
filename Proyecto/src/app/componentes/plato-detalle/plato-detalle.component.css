@@ -1,0 +1,42 @@
+.menu {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    border: #333 solid 1px;
+  }
+  
+  .platos {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    padding: 2.5rem; /* aún más espacio interno */
+    width: 400px;    /* tarjeta más ancha */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .platos img {
+    width: 100%;
+    height: 260px; /* imagen más alta */
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .platos p {
+    font-size: 1.05rem; /* texto un poco más grande */
+  }
+  
+  .platos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  
+  .platos p strong {
+    font-weight: 600;
+  }
+  

@@ -9,7 +9,7 @@ import { QuienesSomosComponent } from './componentes/quienes-somos/quienes-somos
 import { LoginComponent } from './componentes/login/login.component'
 import { RegistrarComponent } from './componentes/registrar/registrar.component'
 import { PageNotFoundComponent } from './componentes/page-not-found/page-not-found.component'
-
+import { PlatoDetalleComponent } from './componentes/plato-detalle/plato-detalle.component'
 
 export const routes: Routes = [
     {path : 'home', component: HomeComponent},
@@ -21,6 +21,9 @@ export const routes: Routes = [
     {path : 'quienessomos', component: QuienesSomosComponent},
     {path : 'login', component: LoginComponent},
     {path : 'registrar', component: RegistrarComponent},
+
     {path: '', redirectTo: '/home', pathMatch: 'full'},
+    { path: 'plato/:id', component: PlatoDetalleComponent } , // 👈 Ruta del detalle
+
     {path: '**', component: PageNotFoundComponent} // Ruta para manejar rutas no encontradas
 ];

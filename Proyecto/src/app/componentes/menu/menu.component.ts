@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Menu } from './menu.model';  // Asegúrate de importar correctamente la interfaz
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, RouterModule],
+  standalone: true
 })
 export class MenuComponent implements OnInit {
 
@@ -141,7 +144,7 @@ export class MenuComponent implements OnInit {
       }
     ]
   };
-  
+
   constructor() { }
 
   ngOnInit(): void {

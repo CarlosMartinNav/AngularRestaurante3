@@ -6,8 +6,7 @@
         <div *ngFor="let plato of menu.recomendacion_chef" class="platos">
           <img [src]="plato.imagen" [alt]="plato.nombre">
           <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3 " type="button">VER MAS</button>
-        </div>
+          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button></div>
       </div>
     </section>
   
@@ -19,8 +18,7 @@
         <div *ngFor="let plato of menu.platos_principales" class="platos">
           <img [src]="plato.imagen" [alt]="plato.nombre">
           <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3 " type="button">VER MAS</button>
-        </div>
+          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>        </div>
       </div>
     </section>
   
@@ -33,8 +31,7 @@
         <div *ngFor="let plato of menu.postres" class="platos">
           <img [src]="plato.imagen" [alt]="plato.nombre">
           <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3 " type="button">VER MAS</button>
-
+          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>
         </div>
       </div>
     </section>
@@ -48,8 +45,7 @@
         <div *ngFor="let plato of menu.cafes" class="platos">
           <img [src]="plato.imagen" [alt]="plato.nombre">
           <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3 " type="button">VER MAS</button>
-
+          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>
         </div>
       </div>
     </section>
@@ -63,8 +59,7 @@
         <div *ngFor="let plato of menu.cocteles" class="platos">
           <img [src]="plato.imagen" [alt]="plato.nombre">
           <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3 " type="button">VER MAS</button>
-
+          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>
         </div>
       </div>
     </section>
