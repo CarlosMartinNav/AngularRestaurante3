@@ -1,15 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { Plato } from '../componentes/menu/menu.model';
 
-
-export interface Plato {
-  id: number;
-  nombre: string;
-  descripcion: string;
-  alergenos: string[];
-  imagen: string;
-}
 
 @Injectable({
   providedIn: 'root'
@@ -140,6 +134,6 @@ export class PlatoService {
 
   getPlatoPorId(id: number): Observable<Plato | undefined> {
     const plato = this.platos.find(p => p.id === id);
-    return of(plato); // Simulamos una llamada HTTP
+    return of(plato); 
   }
 }
