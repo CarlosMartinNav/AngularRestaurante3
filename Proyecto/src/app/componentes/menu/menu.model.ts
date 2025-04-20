@@ -1,4 +1,5 @@
 export interface Plato {
+    
     nombre: string;
     descripcion: string;
     alergenos: string[];
@@ -12,4 +13,3 @@ export interface Plato {
     cafes: Plato[];
     cocteles: Plato[];
   }
-  
