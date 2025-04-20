@@ -55,13 +55,6 @@ export class MenuComponent implements OnInit {
         alergenos: ["Leche", "Vegetales"],
         imagen: "img/Torre Vegetariana de Vegetales Asados y Queso de Cabra.webp"
       },
-      {
-        nombre: "Lubina a la Plancha con Quinoa al Cítrico",
-        descripcion: "Lubina a la parrilla con salsa de mantequilla y vegetales de temporada.",
-       
-        alergenos: ["Pescado"],
-        imagen: "img/Lubina a la Plancha con Quinoa al Cítrico.webp"
-      }
     ],
 
 
@@ -107,7 +100,6 @@ export class MenuComponent implements OnInit {
     { nombre: "Whisky", descripcion: "Old Fashioned clásico con base de whisky, servido en un vaso con borde dorado.",  alergenos: [], imagen: "img/Whisky.webp" },
     { nombre: "Martini de Naranja con Romero", descripcion: "Martini con naranja y un toque de romero.",  alergenos: [], imagen: "img/MartiniNaranja.webp" },
     { nombre: "Cóctel de Frambuesa y Menta", descripcion: "Cóctel rojo profundo, decorado con frambuesas y menta.",  alergenos: [], imagen: "img/coctelFrambuesa.webp" },
-    { nombre: "Cóctel Verde con Pepino y Lima", descripcion: "Cóctel refrescante con pepino, lima y flores comestibles.",  alergenos: [], imagen: "img/coctelVerdePepino.webp" }
   ]
   };
 
