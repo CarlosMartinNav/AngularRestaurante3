@@ -4,7 +4,8 @@
   }
   
   h2{
-    text-align: center;;
+    text-align: center;
+    color: #8b5a2b;
   }
 
   .menu {
@@ -47,19 +48,29 @@
     font-weight: 600;
   }
   
+
+  
   button.btn {
-    margin-top: 1rem;
-    background-color: #007bff;
-    color: white;
+    background: linear-gradient(135deg, #cfcfcf, #e2e2e2);
+    color: #222;
     border: none;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 999px;
     cursor: pointer;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
   }
   
   button.btn:hover {
-    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #bdbdbd, #d8d8d8);
   }
+  
+  button.btn:active {
+    transform: scale(0.98);
+  }
+  
   
