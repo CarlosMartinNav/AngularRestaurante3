@@ -1,5 +1,5 @@
 export interface Plato {
-    
+    id: number;
     nombre: string;
     descripcion: string;
     alergenos: string[];
