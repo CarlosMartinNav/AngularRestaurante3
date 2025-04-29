@@ -7,11 +7,11 @@ import { provideHttpClient } from '@angular/common/http';
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
 
-import { routes } from './app/app.routes'; // 👈 importa las rutas
+import { routes } from './app/app.routes'; 
   
   bootstrapApplication(AppComponent, {
     providers: [
       provideHttpClient(),
-      provideRouter(routes) // 👈 necesario si usas routing
+      provideRouter(routes) 
     ]
   });

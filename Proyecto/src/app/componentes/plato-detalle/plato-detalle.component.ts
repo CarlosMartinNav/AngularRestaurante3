@@ -11,6 +11,7 @@ import { Plato } from '../menu/menu.model';
   templateUrl: './plato-detalle.component.html',
   styleUrls: ['./plato-detalle.component.css']
 })
+
 export class PlatoDetalleComponent implements OnInit {
   plato?: Plato;
 
