@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { PlatoService } from '../../servicios/plato.service';
 import { Plato } from '../menu/menu.model';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-plato-detalle',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink,RouterLinkActive],
   templateUrl: './plato-detalle.component.html',
   styleUrls: ['./plato-detalle.component.css']
 })
