@@ -23,7 +23,6 @@ export const routes: Routes = [
     {path : 'registrar', component: RegistrarComponent},
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: 'plato/:id', component: PlatoDetalleComponent } , //  Ruta del detalle
-
     {path: '**', component: PageNotFoundComponent} // Ruta para manejar rutas no encontradas
 ];
 

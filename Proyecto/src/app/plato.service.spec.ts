@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { Menu } from './componentes/menu/menu.model';
 
 export class PlatoService {
-  private jsonURL = 'assets/menasdasdasdasdu.json';
+  private jsonURL = '../../assets/platos.json';
 
   constructor(private http: HttpClient) {}
 
