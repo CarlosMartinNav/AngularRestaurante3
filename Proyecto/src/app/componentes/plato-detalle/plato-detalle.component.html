@@ -1,13 +1,8 @@
-<div class="menu">
-    <section *ngIf="plato" class="platos">
-      <h2>{{ plato.nombre }}</h2>
-      <img [src]="plato.imagen" [alt]="plato.nombre">
-      <p><strong>Descripción:</strong> {{ plato.descripcion }}</p>
-      <p><strong>Alérgenos:</strong> {{ plato.alergenos.join(', ') }}</p>
-      <button class="btn btn-secondary rounded-pill px-3" routerLink="/menu" routerLinkActive="activeLinkMenu" type="button">
-        🔙 VOLVER
-      </button>
-            
-    </section>
+<div *ngIf="plato">
+    <h1>{{ plato.nombre }}</h1>
+    <img [src]="plato.imagen" [alt]="plato.nombre">
+    <p><strong>Descripción:</strong> {{ plato.descripcion }}</p>
+    <p><strong>Alérgenos:</strong> {{ plato.alergenos.join(', ') || 'No especificados' }}</p>
+    <button routerLink="/menu">🔙 Volver al menú</button>
   </div>
   

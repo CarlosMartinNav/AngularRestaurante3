@@ -1,16 +1,15 @@
 import { TestBed } from '@angular/core/testing';
+import { Plato } from './componentes/menu/menu.model';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Menu } from './componentes/menu/menu.model';
 
-import { PlatoService } from './plato.service';
+export class PlatoService {
+  private jsonURL = 'assets/menu.json';
 
-describe('PlatoService', () => {
-  let service: PlatoService;
+  constructor(private http: HttpClient) {}
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(PlatoService);
-  });
-
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+  getMenu(): Observable<Menu> {
+    return this.http.get<Menu>(this.jsonURL);
+  }}

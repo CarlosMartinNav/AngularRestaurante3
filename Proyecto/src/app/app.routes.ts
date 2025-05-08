@@ -21,9 +21,9 @@ export const routes: Routes = [
     {path : 'quienessomos', component: QuienesSomosComponent},
     {path : 'login', component: LoginComponent},
     {path : 'registrar', component: RegistrarComponent},
-
     {path: '', redirectTo: '/home', pathMatch: 'full'},
-    { path: 'plato/:id', component: PlatoDetalleComponent } , // 👈 Ruta del detalle
+    { path: 'plato/:id', component: PlatoDetalleComponent } , //  Ruta del detalle
 
     {path: '**', component: PageNotFoundComponent} // Ruta para manejar rutas no encontradas
 ];
+
