@@ -6,11 +6,11 @@ import { Menu } from './componentes/menu/menu.model';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PlatoService {
-    constructor(private http: HttpClient) { }
-  
-    // Aquí haces la llamada HTTP para obtener el JSON
-    getMenu(): Observable<Menu> {
-      return this.http.get<Menu>('assets/platos.json');
-    }
+  constructor(private http: HttpClient) {}
+
+  getMenu(): Observable<Menu> {
+    return this.http.get<Menu>('assets/platos.json');  // Asegúrate de que la ruta sea correcta
+  }
 }

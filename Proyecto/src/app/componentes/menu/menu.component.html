@@ -1,70 +1,13 @@
-<div class="menu-container">
-    <!-- RECOMENDACIONES DEL CHEF -->
-    <section class="section">
-      <h2>Recomendaciones del Chef</h2>
-      <div class="menu">
-        <div *ngFor="let plato of menu.recomendacion_chef" class="platos">
-          <img [src]="plato.imagen" [alt]="plato.nombre">
-          <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button></div>
+<div *ngIf="menu" class="section">
+  <div *ngFor="let categoria of getCategorias()">
+    <h2>{{ categoria.nombre }}</h2>
+    <div class="menu">
+      <div *ngFor="let plato of categoria.platos" class="platos">
+        <h3>{{ plato.nombre }}</h3>
+        <img [src]="plato.imagen" alt="{{ plato.nombre }}">
+        <!-- Botón que redirige al detalle del plato -->
+        <button class="btn" [routerLink]="['/plato', plato.id]">Ver más</button>
       </div>
-    </section>
-  
-    
-    <!-- PLATOS PRINCIPALES -->
-    <section class="section">
-      <h2>Platos Principales</h2>
-      <div class="menu">
-        <div *ngFor="let plato of menu.platos_principales" class="platos">
-          <img [src]="plato.imagen" [alt]="plato.nombre">
-          <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>        </div>
-      </div>
-    </section>
-  
-  
-
-    <!-- POSTRES -->
-    <section class="section">
-      <h2>Postres</h2>
-      <div class="menu">
-        <div *ngFor="let plato of menu.postres" class="platos">
-          <img [src]="plato.imagen" [alt]="plato.nombre">
-          <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>
-        </div>
-      </div>
-    </section>
-  
-
-
-    <!-- CAFÉS -->
-    <section class="section">
-      <h2>Cafés</h2>
-      <div class="menu">
-        <div *ngFor="let plato of menu.cafes" class="platos">
-          <img [src]="plato.imagen" [alt]="plato.nombre">
-          <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>
-        </div>
-      </div>
-    </section>
-  
-
-
-    <!-- CÓCTELES -->
-    <section class="section">
-      <h2>Cócteles</h2>
-      <div class="menu">
-        <div *ngFor="let plato of menu.cocteles" class="platos">
-          <img [src]="plato.imagen" [alt]="plato.nombre">
-          <p><strong>{{ plato.nombre }}</strong></p>
-          <button class="btn btn-primary rounded-pill px-3" [routerLink]="['/plato', plato.id]" type="button"> VER MÁS</button>
-        </div>
-      </div>
-    </section>
-  
+    </div>
   </div>
-  
-  
-  
+</div>
