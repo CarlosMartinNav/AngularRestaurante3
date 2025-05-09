@@ -11,6 +11,6 @@ export class PlatoService {
   
     // Aquí haces la llamada HTTP para obtener el JSON
     getMenu(): Observable<Menu> {
-      return this.http.get<Menu>('../../assets/platos.json');
+      return this.http.get<Menu>('assets/platos.json');
     }
 }

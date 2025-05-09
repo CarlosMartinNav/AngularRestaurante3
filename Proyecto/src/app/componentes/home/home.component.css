@@ -221,6 +221,9 @@ main {
         flex: 1 1 48%;
     }
 
+    .tarjeta{
+        width: 50%;
+    }
     .habitacion {
         flex: 1 1 calc(50% - 30px);
     }
